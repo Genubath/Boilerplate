@@ -3,10 +3,10 @@ version: '3.7'
 
 services:
   app:
-    container_name: boilerplate
+    container_name: boilerplate-test
     build:
       context: .
-      target: prod
+      target: test
     restart: always
     ports:
       - "8080:8080"
