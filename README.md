@@ -50,6 +50,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ### Use Travis CI to Track Build Status
 [Travis CI](https://travis-ci.org/)
 
+### Serverless Stack
+[Serverless Stack](https://serverless-stack.com/chapters/create-containers.html)
+
 ### Code Splitting
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
