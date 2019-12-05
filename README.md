@@ -55,7 +55,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 [Serverless Stack](https://serverless-stack.com/chapters/create-containers.html)
 
-## Sonar Qube
+### Sonar Qube
 
 [Sonar](https://sonarcloud.io/dashboard?id=Genubath_boilerplate)
 
