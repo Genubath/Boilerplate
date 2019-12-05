@@ -7,13 +7,11 @@ import Routes from "./Routes";
 export default function App(props) {
   return (
     <div className="App container">
-      <Navbar fluid collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <Link to="/">Home</Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
+      <Navbar collapseOnSelect>
+        <Navbar.Brand>
+          <Link to="/">Home</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle />
       </Navbar>
       <Routes />
     </div>

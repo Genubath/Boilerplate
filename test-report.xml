@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\logan\Desktop\Workspace\boilerplate\src\Pages\Login\Login.test.js">
+  <file path="/home/vagrant/boilerplate/src/Pages/Login/Login.test.js">
+    <testCase name="renders without crashing" duration="44"/>
   </file>
-  <file path="C:\Users\logan\Desktop\Workspace\boilerplate\src\Pages\Home\Home.test.js">
-    <testCase name="renders without crashing" duration="15"/>
+  <file path="/home/vagrant/boilerplate/src/App.test.js">
+    <testCase name="renders without crashing" duration="30"/>
   </file>
-  <file path="C:\Users\logan\Desktop\Workspace\boilerplate\src\Pages\About\About.test.js">
-    <testCase name="renders without crashing" duration="15"/>
+  <file path="/home/vagrant/boilerplate/src/Pages/About/About.test.js">
+    <testCase name="renders without crashing" duration="3"/>
   </file>
-  <file path="C:\Users\logan\Desktop\Workspace\boilerplate\src\Pages\Dashboard\Dashboard.test.js">
+  <file path="/home/vagrant/boilerplate/src/Pages/Dashboard/Dashboard.test.js">
+    <testCase name="renders without crashing" duration="4"/>
+  </file>
+  <file path="/home/vagrant/boilerplate/src/Pages/Home/Home.test.js">
     <testCase name="renders without crashing" duration="2"/>
-  </file>
-  <file path="C:\Users\logan\Desktop\Workspace\boilerplate\src\App.test.js">
   </file>
 </testExecutions>
