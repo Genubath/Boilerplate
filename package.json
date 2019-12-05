@@ -15,9 +15,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "jest": {
-    "testResultsProcessor": "jest-sonar-reporter"
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
