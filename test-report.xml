@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/vagrant/boilerplate/src/Pages/Login/Login.test.js">
-    <testCase name="renders without crashing" duration="23"/>
+    <testCase name="renders without crashing" duration="29"/>
   </file>
   <file path="/home/vagrant/boilerplate/src/App.test.js">
-    <testCase name="renders without crashing" duration="25"/>
+    <testCase name="renders without crashing" duration="46"/>
+  </file>
+  <file path="/home/vagrant/boilerplate/src/Pages/Home/Home.test.js">
+    <testCase name="renders without crashing" duration="3"/>
   </file>
   <file path="/home/vagrant/boilerplate/src/Pages/About/About.test.js">
     <testCase name="renders without crashing" duration="2"/>
   </file>
   <file path="/home/vagrant/boilerplate/src/Pages/Dashboard/Dashboard.test.js">
-    <testCase name="renders without crashing" duration="2"/>
-  </file>
-  <file path="/home/vagrant/boilerplate/src/Pages/Home/Home.test.js">
     <testCase name="renders without crashing" duration="2"/>
   </file>
 </testExecutions>
