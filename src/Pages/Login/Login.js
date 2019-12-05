@@ -26,7 +26,7 @@ export default function Login(props) {
             onChange={e => setEmail(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlId="password" bsSize="large">
+        <Form.Group controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
             value={password}
@@ -34,7 +34,7 @@ export default function Login(props) {
             type="password"
           />
         </Form.Group>
-        <Button block bsSize="large" disabled={!validateForm()} type="submit">
+        <Button block disabled={!validateForm()} type="submit">
           Login
         </Button>
       </Form>
