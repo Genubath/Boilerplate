@@ -1,13 +1,8 @@
-* {
-  text-align: center;
-  background-color: #282c34;
-  color: white;
-}
-
 .App {
+  background-color: #343a40;
   text-align: center;
-  background-color: #282c34;
   color: white;
+  height: 100vh;
 }
 
 .App-logo {
