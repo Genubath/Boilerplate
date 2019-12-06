@@ -7,15 +7,16 @@ import {
   Button,
   FormControl
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 import "./App.css";
 import Routes from "./Routes";
 
-export default function App(props) {
+function App(props) {
   const [isAuthenticated, userHasAuthenticated] = useState(false);
   function handleLogout() {
     userHasAuthenticated(false);
+    props.history.push("/login");
   }
   return (
     <div className="App">
@@ -60,3 +61,5 @@ export default function App(props) {
     </div>
   );
 }
+
+export default withRouter(App);

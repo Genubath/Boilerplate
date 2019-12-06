@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { Form, Button, Jumbotron } from "react-bootstrap";
+import { Form, Jumbotron , Nav} from "react-bootstrap";
+import { Link } from "react-router-dom";
 // import { Auth } from "aws-amplify";
 import "./Login.css";
+import LoaderButton from "../../Components/LoaderButton/LoaderButton"
 
 export default function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   function validateForm() {
     return email.length > 0 && password.length > 0;
@@ -13,7 +16,7 @@ export default function Login(props) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-
+    setIsLoading(true);
     try {
       // await Auth.signIn(email, password);
       props.userHasAuthenticated(true);
@@ -22,6 +25,7 @@ export default function Login(props) {
       if (process.env.NODE_ENV === "development") {
         console.log(e.message);
       }
+      setIsLoading(false);
     }
   }
 
@@ -47,9 +51,10 @@ export default function Login(props) {
               type="password"
             />
           </Form.Group>
-          <Button block disabled={!validateForm()} type="submit" variant="dark">
+          <LoaderButton block disabled={!validateForm()} type="submit" variant="dark">
             Login
-          </Button>
+          </LoaderButton>
+          <Nav.Link to="/login/reset" as={Link}>Forgot password?</Nav.Link>
         </Form>
       </Jumbotron>
     </div>
