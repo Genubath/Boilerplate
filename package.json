@@ -89,9 +89,18 @@
     "roots": [
       "<rootDir>/src"
     ],
+    "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
+      "!src/**/*.d.ts",
+      "!**/node_modules/**",
+      "!**/index.js",
+      "!**/serviceWorker.js"
+    ],
+    "coverageDirectory": "output/coverage/jest",
+    "coverageReporters": [
+      "text",
+      "lcov"
     ],
     "setupFiles": [
       "react-app-polyfill/jsdom"
