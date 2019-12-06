@@ -82,14 +82,11 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "jest-sonar-reporter": "^2.0.0"
-  },
+  "devDependencies": {},
   "jest": {
     "roots": [
       "<rootDir>/src"
     ],
-    "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.d.ts",
@@ -97,10 +94,8 @@
       "!**/index.js",
       "!**/serviceWorker.js"
     ],
-    "coverageDirectory": "output/coverage/jest",
     "coverageReporters": [
-      "text",
-      "lcov"
+      "text"
     ],
     "setupFiles": [
       "react-app-polyfill/jsdom"
@@ -111,7 +106,6 @@
       "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
     ],
     "testEnvironment": "jest-environment-jsdom-fourteen",
-    "testResultsProcessor": "jest-sonar-reporter",
     "transform": {
       "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
