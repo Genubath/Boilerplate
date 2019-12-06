@@ -1,11 +1,11 @@
-@media all and (min-width: 480px) {
-  .Login {
-    padding: 60px 0;
-    background-color: #364859 !important;
-  }
+.container {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .Login form {
-    margin: 0 auto;
-    max-width: 320px;
-  }
+.jumbotron {
+  min-width: 480px;
+  background-color: #364859 !important;
 }
