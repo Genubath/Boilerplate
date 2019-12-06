@@ -1,5 +1,6 @@
 import React from "react";
 import { Jumbotron, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "./Dashboard.css";
 
@@ -13,7 +14,7 @@ export default function Dashboard() {
           calling extra attention to featured content or information.
         </p>
         <p>
-          <Button variant="dark" href="/about">
+          <Button variant="dark" to="/about" as={Link}>
             Learn more
           </Button>
         </p>
