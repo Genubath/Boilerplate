@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch } from "react-router-dom";
-import AppliedRoute from "./Components/AppliedRoutes/AppliedRoutes";
+import AppliedRoute from "./Components/AppliedRoute/AppliedRoute";
 import Login from "./Pages/Login/Login";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
