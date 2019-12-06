@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import NotFound from "./Pages/NotFound/NotFound";
+import SignUp from "./Pages/SignUp/SignUp";
 
 export default function Routes({ appProps }) {
   return (
@@ -18,6 +19,7 @@ export default function Routes({ appProps }) {
         appProps={appProps}
       />
       <AppliedRoute path="/login" exact component={Login} appProps={appProps} />
+      <AppliedRoute path="/signup" component={SignUp} appProps={appProps} />
       <AppliedRoute component={NotFound} />
     </Switch>
   );
