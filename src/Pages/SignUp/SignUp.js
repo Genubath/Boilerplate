@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, FormGroup, FormControl } from "react-bootstrap";
+import { Form, FormGroup, FormControl, Jumbotron } from "react-bootstrap";
 import LoaderButton from "../../Components/LoaderButton/LoaderButton";
 import { useFormFields } from "../../libs/hooksLib";
 import "./SignUp.css";
@@ -45,7 +45,7 @@ export default function Signup(props) {
   function renderConfirmationForm() {
     return (
       <form onSubmit={handleConfirmationSubmit}>
-        <FormGroup controlId="confirmationCode" bsSize="large">
+        <FormGroup controlId="confirmationCode">
           <Form.Label>Confirmation Code</Form.Label>
           <FormControl
             autoFocus
@@ -58,9 +58,9 @@ export default function Signup(props) {
         <LoaderButton
           block
           type="submit"
-          bsSize="large"
           isLoading={isLoading}
           disabled={!validateConfirmationForm()}
+          variant="dark"
         >
           Verify
         </LoaderButton>
@@ -70,47 +70,50 @@ export default function Signup(props) {
 
   function renderForm() {
     return (
-      <form onSubmit={handleSubmit}>
-        <FormGroup controlId="email" bsSize="large">
-          <Form.Label>Email</Form.Label>
-          <FormControl
-            autoFocus
-            type="email"
-            value={fields.email}
-            onChange={handleFieldChange}
-          />
-        </FormGroup>
-        <FormGroup controlId="password" bsSize="large">
-          <Form.Label>Password</Form.Label>
-          <FormControl
-            type="password"
-            value={fields.password}
-            onChange={handleFieldChange}
-          />
-        </FormGroup>
-        <FormGroup controlId="confirmPassword" bsSize="large">
-          <Form.Label>Confirm Password</Form.Label>
-          <FormControl
-            type="password"
-            onChange={handleFieldChange}
-            value={fields.confirmPassword}
-          />
-        </FormGroup>
-        <LoaderButton
-          block
-          type="submit"
-          bsSize="large"
-          isLoading={isLoading}
-          disabled={!validateForm()}
-        >
-          Signup
-        </LoaderButton>
-      </form>
+        <Jumbotron className="jumbotron">
+          <h2>Signup</h2>
+          <Form onSubmit={handleSubmit}>
+            <FormGroup controlId="email">
+              <Form.Label>Email</Form.Label>
+              <FormControl
+                autoFocus
+                type="email"
+                value={fields.email}
+                onChange={handleFieldChange}
+              />
+            </FormGroup>
+            <FormGroup controlId="password">
+              <Form.Label>Password</Form.Label>
+              <FormControl
+                type="password"
+                value={fields.password}
+                onChange={handleFieldChange}
+              />
+            </FormGroup>
+            <FormGroup controlId="confirmPassword">
+              <Form.Label>Confirm Password</Form.Label>
+              <FormControl
+                type="password"
+                onChange={handleFieldChange}
+                value={fields.confirmPassword}
+              />
+            </FormGroup>
+            <LoaderButton
+              block
+              type="submit"
+              isLoading={isLoading}
+              disabled={!validateForm()}
+              variant="dark"
+            >
+              Signup
+            </LoaderButton>
+          </Form>
+        </Jumbotron>
     );
   }
 
   return (
-    <div className="Signup">
+    <div className="container">
       {newUser === null ? renderForm() : renderConfirmationForm()}
     </div>
   );

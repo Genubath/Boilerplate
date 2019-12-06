@@ -25,6 +25,7 @@ export default function Login(props) {
   return (
     <div className="container">
       <Jumbotron className="jumbotron">
+        <h2>Login</h2>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="email">
             <Form.Label>Email</Form.Label>

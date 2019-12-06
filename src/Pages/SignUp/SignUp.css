@@ -14,3 +14,15 @@
   padding-bottom: 10px;
   color: #999;
 }
+
+.container {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron {
+  min-width: 480px;
+  background-color: #364859 !important;
+}
