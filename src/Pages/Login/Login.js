@@ -17,6 +17,7 @@ export default function Login(props) {
     try {
       // await Auth.signIn(email, password);
       props.userHasAuthenticated(true);
+      props.history.push("/");
     } catch (e) {
       if (process.env.NODE_ENV === "development") {
         console.log(e.message);
