@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\logan\Desktop\Workspace\boilerplate\src\Pages\Home\Home.test.js">
     <testCase name="renders without crashing" duration="27"/>
