@@ -1,3 +1,5 @@
 #282c34
 #2c384e
 #09d3ac
+
+REMEMBER npm test -- --coverage --watchAll=false to generate test coverage
