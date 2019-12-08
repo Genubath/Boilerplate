@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Form, Jumbotron , Nav} from "react-bootstrap";
+import { Form, Jumbotron, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // import { Auth } from "aws-amplify";
 import "./Login.css";
-import LoaderButton from "../../Components/LoaderButton/LoaderButton"
+import LoaderButton from "../../Components/LoaderButton/LoaderButton";
 
 export default function Login(props) {
   const [email, setEmail] = useState("");
@@ -51,10 +51,18 @@ export default function Login(props) {
               type="password"
             />
           </Form.Group>
-          <LoaderButton block disabled={!validateForm()} type="submit" variant="dark">
+          <LoaderButton
+            block
+            isLoading={isLoading}
+            disabled={!validateForm()}
+            type="submit"
+            variant="dark"
+          >
             Login
           </LoaderButton>
-          <Nav.Link to="/login/reset" as={Link}>Forgot password?</Nav.Link>
+          <Nav.Link to="/login/reset" as={Link}>
+            Forgot password?
+          </Nav.Link>
         </Form>
       </Jumbotron>
     </div>
