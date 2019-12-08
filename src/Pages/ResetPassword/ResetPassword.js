@@ -48,7 +48,9 @@ export default class ResetPassword extends Component {
       //   await Auth.forgotPassword(this.state.email);
       this.setState({ codeSent: true });
     } catch (e) {
-      alert(e.message);
+      if (process.env.NODE_ENV === "development") {
+        console.log(e.message);
+      }
       this.setState({ isSendingCode: false });
     }
   };
@@ -66,7 +68,9 @@ export default class ResetPassword extends Component {
       //   );
       this.setState({ confirmed: true });
     } catch (e) {
-      alert(e.message);
+      if (process.env.NODE_ENV === "development") {
+        console.log(e.message);
+      }
       this.setState({ isConfirming: false });
     }
   };
@@ -86,7 +90,7 @@ export default class ResetPassword extends Component {
         <LoaderButton
           block
           type="submit"
-          loadingText="Sending…"
+          // loadingText="Sending…"
           text="Send Confirmation"
           variant="dark"
           isLoading={this.state.isSendingCode}
@@ -133,7 +137,7 @@ export default class ResetPassword extends Component {
           block
           type="submit"
           text="Confirm"
-          loadingText="Confirm…"
+          // loadingText="Confirm…"
           variant="dark"
           isLoading={this.state.isConfirming}
           disabled={!this.validateResetForm()}
