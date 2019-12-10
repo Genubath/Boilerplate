@@ -1,15 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import SignUp from "./SignUp";
+import TermsOfService from "./TermsOfService";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(
-    <Router>
-      <SignUp />
-    </Router>,
-    div
-  );
+  ReactDOM.render(<TermsOfService />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

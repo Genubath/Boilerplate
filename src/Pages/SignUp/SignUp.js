@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, FormGroup, FormControl, Jumbotron } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import LoaderButton from "../../Components/LoaderButton/LoaderButton";
 import { useFormFields } from "../../libs/hooksLib";
 import "./SignUp.css";
@@ -70,45 +71,68 @@ export default function Signup(props) {
 
   function renderForm() {
     return (
-        <Jumbotron className="jumbotron">
-          <h2>Signup</h2>
-          <Form onSubmit={handleSubmit}>
-            <FormGroup controlId="email">
-              <Form.Label>Email</Form.Label>
-              <FormControl
-                autoFocus
-                type="email"
-                value={fields.email}
-                onChange={handleFieldChange}
-              />
-            </FormGroup>
-            <FormGroup controlId="password">
-              <Form.Label>Password</Form.Label>
-              <FormControl
-                type="password"
-                value={fields.password}
-                onChange={handleFieldChange}
-              />
-            </FormGroup>
-            <FormGroup controlId="confirmPassword">
-              <Form.Label>Confirm Password</Form.Label>
-              <FormControl
-                type="password"
-                onChange={handleFieldChange}
-                value={fields.confirmPassword}
-              />
-            </FormGroup>
-            <LoaderButton
-              block
-              type="submit"
-              isLoading={isLoading}
-              disabled={!validateForm()}
-              variant="dark"
-            >
-              Signup
-            </LoaderButton>
-          </Form>
-        </Jumbotron>
+      <Jumbotron className="jumbotron">
+        <h2>Signup</h2>
+        <Form onSubmit={handleSubmit}>
+          <FormGroup controlId="userName">
+            <Form.Label>Username</Form.Label>
+            <FormControl
+              autoFocus
+              type="userName"
+              value={fields.userName}
+              onChange={handleFieldChange}
+            />
+          </FormGroup>
+          <FormGroup controlId="email">
+            <Form.Label>Email</Form.Label>
+            <FormControl
+              autoFocus
+              type="email"
+              value={fields.email}
+              onChange={handleFieldChange}
+            />
+          </FormGroup>
+          <FormGroup controlId="password">
+            <Form.Label>Password</Form.Label>
+            <FormControl
+              type="password"
+              value={fields.password}
+              onChange={handleFieldChange}
+            />
+          </FormGroup>
+          <FormGroup controlId="confirmPassword">
+            <Form.Label>Confirm Password</Form.Label>
+            <FormControl
+              type="password"
+              onChange={handleFieldChange}
+              value={fields.confirmPassword}
+            />
+          </FormGroup>
+          <FormGroup controlId="confirmTermsOfService">
+            <Form.Check
+              type="checkbox"
+              id={`default-checkbox`}
+              label={
+                <>
+                  I agree to the{" "}
+                  <Link to="/termsofservice" target="_blank" as={Link}>
+                    Terms of Service
+                  </Link>
+                </>
+              }
+            />
+          </FormGroup>
+          <LoaderButton
+            block
+            type="submit"
+            isLoading={isLoading}
+            disabled={!validateForm()}
+            variant="dark"
+          >
+            Signup
+          </LoaderButton>
+        </Form>
+      </Jumbotron>
     );
   }
 

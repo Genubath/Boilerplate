@@ -7,7 +7,8 @@ import About from "./Pages/About/About";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import NotFound from "./Pages/NotFound/NotFound";
 import SignUp from "./Pages/SignUp/SignUp";
-import ResetPassword from "./Pages/ResetPassword/ResetPassword"
+import ResetPassword from "./Pages/ResetPassword/ResetPassword";
+import TermsOfService from "./Pages/TermsOfService/TermsOfService";
 
 export default function Routes({ appProps }) {
   return (
@@ -20,8 +21,17 @@ export default function Routes({ appProps }) {
         appProps={appProps}
       />
       <AppliedRoute path="/login" exact component={Login} appProps={appProps} />
-      <AppliedRoute path="/login/reset" component={ResetPassword} appProps={appProps}/>
+      <AppliedRoute
+        path="/login/reset"
+        component={ResetPassword}
+        appProps={appProps}
+      />
       <AppliedRoute path="/signup" component={SignUp} appProps={appProps} />
+      <AppliedRoute
+        path="/termsofservice"
+        component={TermsOfService}
+        appProps={appProps}
+      />
       <AppliedRoute component={NotFound} />
     </Switch>
   );

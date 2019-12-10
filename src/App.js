@@ -11,6 +11,7 @@ import { Link, withRouter } from "react-router-dom";
 
 import "./App.css";
 import Routes from "./Routes";
+import AppFooter from "./Components/AppFooter/AppFooter";
 
 function App(props) {
   const [isAuthenticated, userHasAuthenticated] = useState(false);
@@ -71,6 +72,7 @@ function App(props) {
         </Navbar.Collapse>
       </Navbar>
       <Routes appProps={{ isAuthenticated, userHasAuthenticated }} />
+      <AppFooter />
     </div>
   );
 }
