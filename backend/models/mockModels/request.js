@@ -1,0 +1,57 @@
+module.exports = (sequelize) => {
+  const Request = sequelize.define(
+    'Request',
+    {
+      id: 54,
+      honorsAddress: 'testAddress',
+      honorsCity: 'testCity',
+      honorsState: 'testState',
+      honorsCounty: 'testCounty',
+      honorsZip: '12345',
+      honorsGps: '',
+      locationNotes: 'testNote',
+      deceasedFirstName: 'testDecFirst',
+      deceasedLastName: 'testDecLast',
+      deceasedSSN: '123456789',
+      honorsRank: 'testRank',
+      branchOfService: 'US Army Air Force',
+      memberStatus: 'Veteran',
+      funeralHome_id: 54,
+      funeralHomeAddress: 'testAddress',
+      funeralHomeCity: 'testCity',
+      funeralHomeState: 'testState',
+      funeralHomeCounty: 'testCounty',
+      funeralHomeZipcode: '12345',
+      funeralHomeName: 'testName',
+      requestor_id: 1,
+      requestorName: 'testName',
+      requestorEmail: 'testEmail',
+      requestorPhoneNumber: '12345647890',
+      requestorFaxNumber: '',
+      relationship: 'testRelation',
+      serviceDateTime: new Date(),
+      serviceTimeZone: 'Eastern Time',
+      serviceType: 'Memorial',
+      serviceLocationName: 'testName',
+      isFlagFamilyProvided: true,
+      isVSOOrgInvolved: true,
+      VSODetails: '',
+      comments: '',
+      NPBRank: 'testRank',
+      NPBName: 'testName',
+      NPBPhone: '1234567890',
+      isEligible: true,
+      flagsPresented: 3,
+      is1946Complete: true,
+      isSchedulerCreated: false,
+      guardUnit: 'testGuardUnit',
+      pocName: 'testPocName',
+      pocNumber: 'testPocNum',
+      requestType: 'FUNERAL_DIRECTOR'
+    },
+    {}
+  );
+
+  Request.findByPk = Request.findById;
+  return Request;
+};

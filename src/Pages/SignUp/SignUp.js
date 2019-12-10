@@ -74,7 +74,7 @@ export default function Signup(props) {
       <Jumbotron className="jumbotron">
         <h2>Signup</h2>
         <Form onSubmit={handleSubmit}>
-          <FormGroup controlId="userName">
+          {/* <FormGroup controlId="userName">
             <Form.Label>Username</Form.Label>
             <FormControl
               autoFocus
@@ -82,7 +82,7 @@ export default function Signup(props) {
               value={fields.userName}
               onChange={handleFieldChange}
             />
-          </FormGroup>
+          </FormGroup> */}
           <FormGroup controlId="email">
             <Form.Label>Email</Form.Label>
             <FormControl
