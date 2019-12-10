@@ -1,4 +1,14 @@
-[![Build Status](https://travis-ci.org/Genubath/boilerplate.svg?branch=master)](https://travis-ci.org/Genubath/boilerplate)[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=bugs)](https://sonarcloud.io/dashboard?id=Genubath_boilerplate)[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=code_smells)](https://sonarcloud.io/dashboard?id=Genubath_boilerplate)[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Genubath_boilerplate)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=alert_status)](https://sonarcloud.io/dashboard?id=Genubath_boilerplate)[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=security_rating)](https://sonarcloud.io/dashboard?id=Genubath_boilerplate)[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=sqale_index)](https://sonarcloud.io/dashboard?id=Genubath_boilerplate)[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=Genubath_boilerplate)
+<p align="center">
+<a href="https://travis-ci.org/Genubath/boilerplate"><img src="https://travis-ci.org/Genubath/boilerplate.svg?branch=master"/></a>
+<a href="https://sonarcloud.io/dashboard?id=Genubath_boilerplate"><img src="https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=bugs"/></a>
+<a href="https://sonarcloud.io/dashboard?id=Genubath_boilerplate"><img src="https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=code_smells"/></a>
+<a href="https://sonarcloud.io/dashboard?id=Genubath_boilerplate"><img src="https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=sqale_rating"/></a>
+<a href="https://sonarcloud.io/dashboard?id=Genubath_boilerplate"><img src="https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=alert_status"/></a>
+<a href="https://sonarcloud.io/dashboard?id=Genubath_boilerplate"><img src="https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=security_rating"/></a>
+<a href="https://sonarcloud.io/dashboard?id=Genubath_boilerplate"><img src="https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=sqale_index"/></a>
+<a href="https://sonarcloud.io/dashboard?id=Genubath_boilerplate"><img src="https://sonarcloud.io/api/project_badges/measure?project=Genubath_boilerplate&metric=vulnerabilities"/></a>
+<a href="https://shields.io/"><img src="https://img.shields.io/github/issues/Genubath/boilerplate"/></a>
+</p>
 
 # boilerplate
 
