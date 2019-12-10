@@ -3,7 +3,7 @@ import { Jumbotron } from "react-bootstrap";
 
 import "./TermsOfService.css";
 
-export default function About() {
+export default function TermsOfService() {
   return (
     <div className="container">
       <Jumbotron className="jumbotron">
